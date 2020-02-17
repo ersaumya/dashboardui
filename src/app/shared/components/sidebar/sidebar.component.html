@@ -1,1 +1,27 @@
-<p>sidebar works!</p>
+<mat-nav-list>
+    <div class="profile-card">
+        <div class="header">
+            <h2>Soumya Rout</h2>
+            <h4>ersaumyarout@gmail.com</h4>
+        </div>
+        <img src="https://avatars1.githubusercontent.com/u/22599067?s=460&v=4" alt="soumya rout">
+    </div>
+    <mat-divider></mat-divider>
+    <h2 matSubheader>Pages</h2>
+    <a mat-list-item routerLink='/' routerLinkActive='list-item-active'>Dashboard</a>
+    <a mat-list-item routerLink='/posts' routerLinkActive='list-item-active'>Posts</a>
+    <a mat-list-item routerLink='/article' routerLinkActive='list-item-active'>Articles</a>
+
+    <mat-divider></mat-divider>
+    <h2 matSubheader>Tools</h2>
+    <a mat-list-item routerLink='/contacts' routerLinkActive='list-item-active'>
+        <mat-icon>import_contacts</mat-icon>
+        Contacts
+    </a>
+    <a mat-list-item routerLink='/contacts' routerLinkActive='list-item-active'>
+        <mat-icon>contact_phone</mat-icon>
+        Leads
+    </a>
+</mat-nav-list>
+
+
