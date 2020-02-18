@@ -7,18 +7,18 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
 import { MatMenuModule } from "@angular/material/menu";
 import { MatListModule } from "@angular/material/list";
-
+import { MatCardModule } from "@angular/material/card";
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
+    CommonModule/* ,
     MatSidenavModule,
     MatDividerModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
-    MatListModule
+    MatListModule */
   ],
   exports: [
     MatSidenavModule,
@@ -27,7 +27,8 @@ import { MatListModule } from "@angular/material/list";
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ]
 })
 export class MaterialModule {}

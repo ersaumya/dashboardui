@@ -6,10 +6,10 @@ import { DashboardComponent } from 'src/app/modules/dashboard/dashboard.componen
 import { PostComponent } from 'src/app/modules/post/post.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MaterialModule } from 'src/app/material.module';
-
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [DefaultComponent, DashboardComponent, PostComponent],
-  imports: [CommonModule, RouterModule, SharedModule, MaterialModule]
+  imports: [CommonModule, RouterModule, SharedModule, MaterialModule,FlexLayoutModule]
 })
 export class DefaultModule {}
