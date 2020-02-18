@@ -7,9 +7,11 @@ import { PostComponent } from 'src/app/modules/post/post.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MaterialModule } from 'src/app/material.module';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { DashboardService } from 'src/app/modules/dashboard.service';
 
 @NgModule({
   declarations: [DefaultComponent, DashboardComponent, PostComponent],
-  imports: [CommonModule, RouterModule, SharedModule, MaterialModule,FlexLayoutModule]
+  imports: [CommonModule, RouterModule, SharedModule, MaterialModule,FlexLayoutModule],
+  providers: [DashboardService ]
 })
 export class DefaultModule {}

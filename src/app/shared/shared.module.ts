@@ -9,10 +9,11 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { AreachartComponent } from './widgets/areachart/areachart.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { CardComponent } from './widgets/card/card.component';
+import { PiechartComponent } from './widgets/piechart/piechart.component';
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, SidebarComponent, AreachartComponent, CardComponent],
+  declarations: [HeaderComponent, FooterComponent, SidebarComponent, AreachartComponent, CardComponent, PiechartComponent],
   imports: [CommonModule, MaterialModule, FlexLayoutModule, RouterModule, HighchartsChartModule],
-  exports: [HeaderComponent, FooterComponent, SidebarComponent, AreachartComponent, CardComponent]
+  exports: [HeaderComponent, FooterComponent, SidebarComponent, AreachartComponent, CardComponent, PiechartComponent]
 })
 export class SharedModule {}
